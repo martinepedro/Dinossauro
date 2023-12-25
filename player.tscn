@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dw124fe36a55c"]
+
+[ext_resource type="Texture2D" uid="uid://c11ip1ujxud6m" path="res://dino.png" id="1_4rdgl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_in4f8"]
+size = Vector2(108, 140)
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(21, 10)
+scale = Vector2(0.260212, 0.392573)
+texture = ExtResource("1_4rdgl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(19, 6)
+shape = SubResource("RectangleShape2D_in4f8")
