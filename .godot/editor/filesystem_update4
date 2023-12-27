@@ -1,4 +1,10 @@
-res://player.tscn
-res://player.gd
+res://Scenes/ground.tscn
 res://Scenes/bg.tscn
-res://assets/free-swamp-game-tileset-pixel-art/License.txt
+res://main.tscn
+res://Scenes/dino.tscn
+res://Scenes/dino.gd
+res://barrel.tscn
+res://bird.tscn
+res://stump.tscn
+res://rock.tscn
+res://main.gd

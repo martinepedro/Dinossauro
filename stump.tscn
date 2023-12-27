@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3dtu3nqh4tvl"]
+
+[ext_resource type="Texture2D" uid="uid://dfi0j5grx07mp" path="res://assets/free-swamp-game-tileset-pixel-art/3 Objects/Ridges/2.png" id="1_8oiqi"]
+
+[node name="Stump" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(80, 56)
+scale = Vector2(4, 4)
+texture = ExtResource("1_8oiqi")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(80, 56)
+scale = Vector2(4, 4)
+polygon = PackedVector2Array(12, -6, 14, 2, 18, 6, 20, 14, -20, 14, -20, 6.4, -12.3, -10, -8.5, -10, -2, -6.8, 6, -13.9, 12, -14)

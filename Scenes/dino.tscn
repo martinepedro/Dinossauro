@@ -1,5 +1,6 @@
-[gd_scene load_steps=24 format=3 uid="uid://bf8ycwwav0qgr"]
+[gd_scene load_steps=25 format=3 uid="uid://bf8ycwwav0qgr"]
 
+[ext_resource type="Script" path="res://Scenes/dino.gd" id="1_mllun"]
 [ext_resource type="Texture2D" uid="uid://bfdba72kiub0l" path="res://assets/dinoCharactersVersion1.1/sheets/DinoSprites - mort.png" id="1_uubjg"]
 [ext_resource type="AudioStream" uid="uid://bo7okbyr1qto5" path="res://assets/jump_sound.mp3" id="2_ioh4v"]
 
@@ -159,7 +160,9 @@ size = Vector2(11, 17)
 size = Vector2(12, 15)
 
 [node name="Dino" type="CharacterBody2D"]
+z_index = 1
 scale = Vector2(8, 8)
+script = ExtResource("1_mllun")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
@@ -176,6 +179,6 @@ shape = SubResource("RectangleShape2D_b3qp3")
 position = Vector2(0, 1.5)
 shape = SubResource("RectangleShape2D_c14ok")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+[node name="JumpSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_ioh4v")
 volume_db = -25.0
